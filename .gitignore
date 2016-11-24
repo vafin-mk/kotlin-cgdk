@@ -1,0 +1,5 @@
+*.jar
+*.MF
+classes
+*.log
+out
