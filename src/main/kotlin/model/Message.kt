@@ -19,7 +19,7 @@ class Message(
     /**
      * @return the order to control the specified lane.
      */
-    val lane: LaneType,
+    val lane: LaneType?,
     /**
      * @return the order to learn the specified skill.
      * *
@@ -31,7 +31,7 @@ class Message(
      *
      * * The field value may not be available in all game modes.
      */
-    val skillToLearn: SkillType, rawMessage: ByteArray) {
+    val skillToLearn: SkillType?, rawMessage: ByteArray) {
   private val rawMessage: ByteArray
 
   init {
